@@ -33,6 +33,10 @@
 #ifndef _NRF_DELAY_H
 #define _NRF_DELAY_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "nrf.h"
 
 /**
@@ -270,5 +274,9 @@ __ASM volatile (
 #endif
 
 void nrf_delay_ms(uint32_t volatile number_of_ms);
+
+#ifdef __cplusplus
+} /* extern "C" */
+#endif
 
 #endif
