@@ -1,5 +1,4 @@
 #include "radio_config.h"
-#include "nrf_delay.h"
 
 static uint32_t packet;
 
